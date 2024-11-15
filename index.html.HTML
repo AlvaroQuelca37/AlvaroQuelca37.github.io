@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Balones</title>
+    <style>
+      body {
+            font-family: Arial, sans-serif;
+            background-color: #2E8B57;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            text-align: center;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            background-color: #666;
+            border-radius: 5px;
+        }
+        .container {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .producto {
+            background-color: white;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 230px;
+            text-align: center;
+        }
+        .producto img {
+            width: 200px; /* Establecer el ancho fijo de las imágenes */
+            height: 200px; /* Establecer el alto fijo de las imágenes */
+            object-fit: cover; /* Mantiene la imagen proporcional y recorta lo que sobre */
+            border-radius: 8px;
+        }
+        .producto h3 {
+            color: #333;
+        }
+        .producto p {
+            font-size: 16px;
+            color: #666;
+        }
+        .precio {
+            font-size: 18px;
+            color: #d9534f;
+            font-weight: bold;
+        }
+        .cta-btn {
+            display: inline-block;
+            padding: 12px 20px;
+            background-color: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+        .cta-btn:hover {
+            background-color: #218838;
+        }
+        .tabla-container {
+            margin: 20px;
+            text-align: center;
+        }
+        table {
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #444;
+            color: white;
+        }
+        td {
+            background-color: #f9f9f9;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .form-container {
+            background-color: #fff;
+            padding: 30px;
+            margin: 20px auto;
+            width: 60%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .form-container h2 {
+            text-align: center;
+            color: #333;
+        }
+        .form-container input,
+        .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .form-container button {
+            background-color: #28a745;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+        .form-container button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>TIENDA DE BALONES</h1>
+    <p>¡Encuentra el balón perfecto para ti!</p>
+</header>
+
+<nav>
+    <a href="#productos">Productos</a>
+    <a href="#tabla">Comparar Balones</a>
+    <a href="#ofertas">Ofertas Especiales</a>
+    <a href="#contacto">Contacto</a>
+</nav>
+
+<div class="container" id="productos">
+   
+    <div class="producto">
+        <img src="1.jpg" text=Balón+De+Fútbol" alt="Balón de Fútbol">
+        <h3>Balón de Fútbol</h3>
+        <p>Balón de fútbol profesional, ideal para partidos y entrenamientos.</p>
+        <p class="precio">$29.99</p>
+        <a href="#comprar" class="cta-btn">Comprar</a>
+    </div>
+    <div class="producto">
+        <img src="2.jpg" text=Balón+De+Baloncesto" alt="Balón de Baloncesto">
+        <h3>Balón de Baloncesto</h3>
+        <p>Balón de baloncesto con alta resistencia y agarre para la cancha.</p>
+        <p class="precio">$35.99</p>
+        <a href="#comprar" class="cta-btn">Comprar</a>
+    </div>
+    <div class="producto">
+        <img src="3.jpg"text=Balón+De+Vóley" alt="Balón de Vóley">
+        <h3>Balón de Vóley</h3>
+        <p>Balón de vóley suave y ligero, ideal para entrenamiento y partidos.</p>
+        <p class="precio">$25.99</p>
+        <a href="#comprar" class="cta-btn">Comprar</a>
+    </div>
+    <div class="producto">
+        <img src="4.jpg" text=Balón+De+Fútbol+Sala" alt="Balón de Fútbol Sala">
+        <h3>Balón de Fútbol Sala</h3>
+        <p>Perfecto para partidos de fútbol sala, más pequeño y pesado.</p>
+        <p class="precio">$24.99</p>
+        <a href="#comprar" class="cta-btn">Comprar</a>
+    </div>
+    <div class="producto">
+        <img src="5.jpg" text=Balón+De+Fútbol+Playa" alt="Balón de Fútbol Playa">
+        <h3>Balón de Fútbol Playa</h3>
+        <p>Diseñado para jugar en la arena, resistente y fácil de manejar.</p>
+        <p class="precio">$19.99</p>
+        <a href="#comprar" class="cta-btn">Comprar</a>
+    </div>
+
+    <!-- Productos adicionales (6 a 20) -->
+    <div class="producto">
+        <img src="6.jpg" text=Balón+De+Futsal" alt="Balón de Futsal">
+        <h3>Balón de Futsal</h3>
+        <p>Perfecto para fútbol sala, de mayor control y menor rebote.</p>
+        <p class="precio">$27.99</p>
+        <a href="#comprar" class="cta-btn">Comprar</a>
+    </div>
+    <div class="producto">
+        <img src="7.jpg" text=Balón+De+Baloncesto+Adulto" alt="Balón de Baloncesto Adulto">
+        <h3>Balón de Baloncesto Adulto</h3>
+        <p>Balón oficial para baloncesto de alto rendimiento, tamaño adulto.</p>
+        <p class="precio">$40.00</p>
+        <a href="#comprar" class="cta-btn">Comprar</a>
+    </div>
+    <div class="producto">
+        <img src="8.jpg" text=Balón+De+Handball" alt="Balón de Handball">
+        <h3>Balón de Handball</h3>
+        <p>Ideal para partidos de handball, con excelente agarre y durabilidad.</p>
+        <p class="precio">$22.50</p>
+        <a href="#comprar" class="cta-btn">Comprar</a>
+    </div>
+    <div class="producto">
+        <img src="9.jpg" text=Balón+De+Fútbol+De+Niños" alt="Balón de Fútbol para Niños">
+        <h3>Balón de Fútbol para Niños</h3>
+        <p>Balón ligero y fácil de controlar, diseñado para los más pequeños.</p>
+        <p class="precio">$15.99</p>
+        <a href="#comprar" class="cta-btn">Comprar</a>
+    </div>
+    <div class="producto">
+        <img src="10.jpg" text=Balón+De+Fútbol+Sala" alt="Balón de Fútbol Sala">
+        <h3>Balón de Fútbol Sala</h3>
+        <p>Balón específico para fútbol sala, duradero y con buen rebote.</p>
+        <p class="precio">$24.99</p>
+        <a href="#comprar" class="cta-btn">Comprar</a>
+    </div>
+    
+    <!-- Continuar con más productos (del 11 al 20) -->
+    <div class="producto">
+        <img src="11.jpg" text=Balón+De+Fútbol+De+Entrenamiento" alt="Balón de Fútbol de Entrenamiento">
+        <h3>Balón de Fútbol de Entrenamiento</h3>
+        <p>Perfecto para entrenamientos intensivos, buena resistencia.</p>
+        <p class="precio">$23.99</p>
+        <a href="#comprar" class="cta-btn">Comprar</a>
+    </div>
+    <div class="producto">
+        <img src="12.jpg" text=Balón+De+Vóley+Para+Niños" alt="Balón de Vóley para Niños">
+        <h3>Balón de Vóley para Niños</h3>
+        <p>Balón ligero y fácil de manejar para los más pequeños.</p>
+        <p class="precio">$19.99</p>
+        <a href="#comprar" class="cta-btn">Comprar</a>
+    </div>
+    <div class="producto">
+        <img src="13.jpg" text=Balón+De+Fútbol+Playa" alt="Balón de Fútbol Playa">
+        <h3>Balón de balonmano</h3>
+        <p>El juego consta de un balón de cuero o de material sintético.</p>
+        <p class="precio">$20.99</p>
+        <a href="#comprar" class="cta-btn">Comprar</a>
+    </div>
+    <div class="producto">
+        <img src="14.jpg" text=Balón+De+Rugby" alt="Balón de Rugby">
+        <h3>Balón de Rugby</h3>
+        <p>Balón profesional de rugby, resistente y de excelente manejo.</p>
+        <p class="precio">$34.99</p>
+        <a href="#comprar" class="cta-btn">Comprar</a>
+    </div>
+    <div class="producto">
+        <img src="15.jpg" text=Balón+De+Baloncesto+Para+Niños" alt="Balón de Baloncesto para Niños">
+        <h3>Balón de Baloncesto para Niños</h3>
+        <p>Diseñado para principiantes, fácil de manejar para niños.</p>
+        <p class="precio">$18.99</p>
+        <a href="#comprar" class="cta-btn">Comprar</a>
+    </div>
+</div>
+
+
+<div class="tabla-container" id="tabla">
+    <h2>"COMPARA TUS BALONES Y OBTEN</h2>
+    <h2>MAS INFORMACION EN ESTA TABLA"</h2>
+    <table>
+        <tr>
+            <th>PREDUCTO</th>
+            <th>DESCRIPCION</th>
+            <th>COLOR</th>
+            <th>DIAMETRO (cm)</th>
+            <th>PRECIO EN BOLIVIA</th>
+            <th>EN STOCK</th>
+            <th>DETALLES DE LOS BALONES</th>
+        </tr>
+ 
+        <tr>
+            <td><a href="https://es.wikipedia.org/wiki/Bal%C3%B3n_de_f%C3%BAtbol">Balón de Fútbol</a></td>
+            <td>Balón de fútbol profesional, ideal para partidos y entrenamientos.</td>
+            <td>Blanco, Negro</td>
+            <td>22</td>
+            <td>199 bs</td>
+            <td>Sí</td>
+            <td><a href="https://es.wikipedia.org/wiki/Bal%C3%B3n_de_f%C3%BAtbol" target="_blank">Ver detalles</a></td>
+        </tr>
+        <tr>
+            <td><a href="es.wikipedia.org/wiki/Bal%C3%B3n_de_baloncesto">Balón de Baloncesto</a></td>
+            <td>Balón de baloncesto con alta resistencia y agarre para la cancha.</td>
+            <td>Naranja</td>
+            <td>24</td>
+            <td>399 bs</td>
+            <td>No</td>
+            <td><a href="es.wikipedia.org/wiki/Bal%C3%B3n_de_baloncesto" target="_blank">Ver detalles</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.deportes.com.bo/volleycat">Balón de Vóley</a></td>
+            <td>Balón de vóley suave y ligero, ideal para entrenamiento y partidos.</td>
+            <td>Amarillo, Blanco</td>
+            <td>22</td>
+            <td>259 bs</td>
+            <td>Sí</td>
+            <td><a href="https://www.deportes.com.bo/volleycat" target="_blank">Ver detalles</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.decathlon.es/es/deportes/futbol-sala/balones" target="_blank">Balón de Futsal</a></td>
+            <td>Perfecto para fútbol sala, de mayor control y menor rebote.</td>
+            <td>Rojo, Blanco</td>
+            <td>22</td>
+            <td>279 bs</td>
+            <td>Sí</td>
+            <td><a href="https://www.decathlon.es/es/deportes/futbol-sala/balones" target="_blank">Ver detalles</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://es.wikipedia.org/wiki/Bal%C3%B3n_de_rugby">Balón de Rugby</a></td>
+            <td>Balón profesional de rugby, resistente y de excelente manejo.</td>
+            <td>Verde, Blanco</td>
+            <td>23</td>
+            <td>349 bs</td>
+            <td>No</td>
+            <td><a href="https://es.wikipedia.org/wiki/Bal%C3%B3n_de_rugby" target="_blank">Ver detalles</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://listado.mercadolibre.com.mx/balon-de-futbol-soccer-para-ninos">Balón de Fútbol para Niños</a></td>
+            <td>Balón ligero y fácil de controlar, diseñado para los más pequeños.</td>
+            <td>Azul, Blanco</td>
+            <td>20</td>
+            <td>159 bs</td>
+            <td>Sí</td>
+            <td><a href="https://listado.mercadolibre.com.mx/balon-de-futbol-soccer-para-ninos">Ver detalles</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.deportes.com.bo/volleycat">Balón de Vóley para Niños</a></td>
+            <td>Perfecto para los más pequeños, con un diseño más suave.</td>
+            <td>Rojo, Azul</td>
+            <td>20</td>
+            <td>199 bs</td>
+            <td>Sí</td>
+            <td><a href="https://www.deportes.com.bo/volleycat" target="_blank">Ver detalles</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.decathlon.es/es/deportes/futbol/balones-futbol-playa">Balón de Fútbol Playa</a></td>
+            <td>Diseñado para jugar en la arena, resistente y fácil de manejar.</td>
+            <td>Amarillo, Naranja</td>
+            <td>24</td>
+            <td>199 bs</td>
+            <td>Sí</td>
+            <td><a href="https://www.decathlon.es/es/deportes/futbol/balones-futbol-playa" target="_blank">Ver detalles</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://es.wikipedia.org/wiki/Bal%C3%B3n_de_balonmano">Balón de balonmano</a></td>
+            <td>Perfecto para fútbol de balonmano, de mayor control y cero rebote.</td>
+            <td>Rojo, Blanco</td>
+            <td>22</td>
+            <td>279 bs</td>
+            <td>Sí</td>
+            <td><a href="https://es.wikipedia.org/wiki/Bal%C3%B3n_de_balonmano" target="_blank">Ver detalles</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://listado.mercadolibre.com.mx/balon-de-handball">Balón de handball</a></td>
+            <td>Balón de baloncesto con alta resistencia y agarre para la cancha.</td>
+            <td>Naranja</td>
+            <td>24</td>
+            <td>359 bs</td>
+            <td>No</td>
+            <td><a href="https://listado.mercadolibre.com.mx/balon-de-handball" target="_blank">Ver detalles</a></td>
+        </tr>
+        
+    </table>
+</div>
+        <div id="ofertas" class="form-container">
+        <h2>¡¡OFERTAS DISPONIBLES EN NAVIDAD PORFAVOR!!</h2>
+        <form action="#">  
+        </form>
+</div>
+
+<div id="contacto" class="form-container">
+    <h2>Contáctanos</h2>
+    <form action="#">
+        <label>¿NOMBRE COMPLETO?</label><br>
+        <input type="text" placeholder="ALVARO QUELCA ALTAMIRANO ALVARO" maxlength="15"required>
+        <label>¿TU CORREO ELECTRONICO?</label><br>
+        <input type="email" placeholder="alvaroquelcaaltamiranoq@gmail.com" maxlength="15"required>
+        <label>¿TU COLOR FAVORITO?</label><br>
+        <input type="email" placeholder="ROSADO OBVIO" maxlength="15"required>
+        <label>¿SEXO?</label><br>
+        <input type="email" placeholder="PREFIERO NO DECIDIRLO"maxlength="15" required>
+        <label>¿TU LUGAR EN EL MUNDO?</label><br>
+        <input type="email" placeholder="ELLA"maxlength="15" required>
+        <label>¿TU ARTISTA FAVORITO?</label><br>
+        <input type="email" placeholder="DUKI,CENTRAL CEE,NEW BLOOD"maxlength="15" required>
+        <label>¿TU TIENDA EN EL MUNDO?</label><br>
+        <input type="email" placeholder="OBVIO ESTA" maxlength="15"required> 
+        <textarea placeholder="ESCRIBE UN MENSAJE CARNAL" rows="4" maxlength="50"required></textarea>
+        <button type="submit">Enviar mensaje</button>
+    </form>
+</div>
+
+</body>
+</html>
